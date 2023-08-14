@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="Arabia">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swap Jo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css">
+  <link rel="stylesheet" type="text/css" href="anas.css">
+</head>
+<body>
+  <div class="container">
+    <img class="image" src="jow.jpg" alt="">
+    
+    <div class="question">
+      <h3>اجب علي سؤال حلقة اليوم</h3>
+    </div>
+    
+    <div class="separator"></div>
+    <div class="form-container">
+      <form action="index.php" method="post" enctype="multipart/form-data">
+        <label for="tel">رقم الهاتف</label>
+        <input type="tel" id="tel" name="tel" value="+962" required><br><br>
+        
+        <label for="message">اجب علي السؤال</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        
+        <label for="video">حمل الفيديو </label>
+        <input type="file" id="video" name="video" required><br><br>
+        <input type="submit" value="ارسل الان">
+
+      </form>
+    </div>
+  </div>
+ 
+ 
+  
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #dad7d7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .thank-you-message {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #007BFF;
+    }
+
+    .message-details {
+      font-size: 20px;
+      color: #555;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .thank-you-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 20px;
+      animation: spin 2s linear infinite, scaleUp 0.5s ease-out;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .thank-you-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes scaleUp {
+      0% { transform: scale(0); }
+      100% { transform: scale(1); }
+    }
+
+    .footer {
+      background-color: #020202;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      color: aliceblue;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="thank-you-img">
+      <img src="download.jpeg" alt="Thank You Image">
+    </div>
+    <div class="thank-you-message">Thank You!</div>
+    <div class="message-details">
+      <p>We appreciate your input. Your message has been successfully submitted.</p>
+      
+    </div>
+  </div>
+  <div class="footer">
+    <p>&copy; 2023  Swap Jo. All rights reserved.</p>
+  </div>
+</body>
+</html>
